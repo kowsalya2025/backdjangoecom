@@ -57,5 +57,13 @@ class LoginAPIView(APIView):
             return Response({"user": serializer.data, "token": "dummy-token"})
         return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
 
+from rest_framework.permissions import AllowAny
+from rest_framework import status
 
+class RegisterView(APIView):
+    permission_classes = [AllowAny]  # Must allow unauthenticated users
+
+    def post(self, request):
+        # your registration logic
+        return Response({"detail": "User registered"}, status=status.HTTP_201_CREATED)
 
