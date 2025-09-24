@@ -132,11 +132,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-<<<<<<< HEAD
-    "https://recatfrontecom.vercel.app/",  # React dev server
-=======
+
     "https://recatfrontecom.vercel.app",  # React dev server
->>>>>>> 030195c677e0c1203dcc7684c9b413c30ff04f0a
+
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True  # Only for development
@@ -154,8 +152,7 @@ REST_FRAMEWORK = {
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-<<<<<<< HEAD
+
 CORS_ALLOW_METHODS = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']
 CORS_ALLOW_HEADERS = ['*']
-=======
->>>>>>> 030195c677e0c1203dcc7684c9b413c30ff04f0a
+
